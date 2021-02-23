@@ -12,5 +12,10 @@ export class BienService{
         {id:1,name:"maison de dinguo", idowner:1, address : "123 rue de washington", price:12000},
         {id:2,name:"maison de sdf", idowner:1, address : "123 rue de miami", price:12000},
         {id:3,name:"maison de Elon Musk", idowner:3, address : "123 rue de los angeles", price:12000},
+        {id:4,name:"maison de Elon Musk", idowner:3, address : "123 rue de los angeles", price:12000},
+        {id:5,name:"maison de Elon Musk", idowner:2, address : "123 rue de los angeles", price:12000},
+        {id:6,name:"maison de Elon Musk", idowner:2, address : "123 rue de los angeles", price:12000},
+        {id:7,name:"maison de Elon Musk", idowner:1, address : "123 rue de los angeles", price:12000},
+        {id:8,name:"maison de Elon Musk", idowner:3, address : "123 rue de los angeles", price:12000},
     ])
 }
