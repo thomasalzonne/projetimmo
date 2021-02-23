@@ -1,0 +1,14 @@
+<div class="contain">
+    <div *ngFor="let imm of user.owned" class="card">
+        <div class="name">
+            {{imm.name}}
+        </div>
+        <div class="addr">
+            Adresse : {{imm.address}}
+        </div>
+        <div class="price">
+            Prix : {{imm.price}} $
+        </div>
+        <button (click)="sell(imm.id)" class="btn">Vendre</button>
+    </div>
+</div>

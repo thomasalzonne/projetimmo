@@ -1,0 +1,25 @@
+.card {
+    position: relative;
+    margin: .5rem 0;
+    align-self: start;
+    word-break: break-word;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: cornsilk;
+    border-radius: 30px;
+}
+.btn{
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.name{
+    margin-top: 30px;
+    margin-bottom: 12px;
+}

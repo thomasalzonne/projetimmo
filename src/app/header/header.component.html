@@ -1,0 +1,37 @@
+<div class="header">
+    <div class="title">
+        <p>Achat de maison de LOCO</p>
+    </div>
+    
+    <div *ngIf="user; else elseBlock" class="title">
+      <div *ngIf="user" class="title">
+        <p>{{user.name}}</p>
+      </div>
+    </div>
+    <ng-template #elseBlock>
+      <div *ngIf="!user">
+        <div id="open-modal" class="modal-window">
+            <div>
+              <a href="#" title="Close" class="modal-close">Close</a>
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input [(ngModel)]="name" type="text" placeholder="Enter Username" name="name" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input [(ngModel)]="password" type="password" placeholder="Enter Password" name="password" required>
+                    
+                  <button (click)='login()' type="submit">Login</button>
+                </div>
+                  </form>
+              </div>
+          </div>
+    </div>
+    <div class="username">
+        <div class="interior">
+          <a class="btn" href="#open-modal">Login</a>
+        </div>
+    </div>
+    </ng-template>
+   
+</div>
