@@ -4,7 +4,11 @@
     height: 120px;
     width: 100%;
     background-color: cornsilk;
+    display: flex;
 }
-.info{
-    height: 100%;
+.title{
+    height: fit-content;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 10px;
 }

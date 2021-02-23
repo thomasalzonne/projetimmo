@@ -1,6 +1,11 @@
 <div class="footer">
-    <div *ngIf="user" class="info">
-        <p class="money">{{user.money}} $</p>
+    <div class="title">
+        <div *ngIf="user" class="title">
+            <p class="money">{{user.money}} $</p>
+        </div>
+    </div>
+    <div class="title" *ngIf="user">
+        <p>Nombre de bien : {{user.owned.length}}</p>
     </div>
 
 </div>

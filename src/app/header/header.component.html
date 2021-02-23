@@ -6,6 +6,7 @@
     <div *ngIf="user; else elseBlock" class="title">
       <div *ngIf="user" class="title">
         <p>{{user.name}}</p>
+        <button (click)='logout()' type="submit">Logout</button>
       </div>
     </div>
     <ng-template #elseBlock>

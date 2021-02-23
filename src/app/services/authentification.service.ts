@@ -18,6 +18,7 @@ export class AuthentificationService {
    this.userService.user$.subscribe(users =>{
       const user = users.find(user => user.name === username && user.password === password)
       if(user) {
+        user.owned = []
         for (bien of biens){
             if (user.id === bien.idowner){
               user.owned.push(bien)
@@ -27,5 +28,9 @@ export class AuthentificationService {
         return true
       }
     })
+  }
+
+  logout(){
+    this.userauth$.next(null)
   }
 }
